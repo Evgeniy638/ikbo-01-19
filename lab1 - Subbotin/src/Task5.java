@@ -1,6 +1,6 @@
 import static java.lang.System.out;
 
-public class Main {
+public class Task5 {
     public static void main(String[] args) {
         testCalculateFactorial(0, 1);
         testCalculateFactorial(1, 1);

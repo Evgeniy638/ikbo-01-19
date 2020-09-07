@@ -1,3 +1,5 @@
+package Task4And5;
+
 public class MovableCircle implements Movable {
     private int radius;
     MovablePoint center;
@@ -9,7 +11,7 @@ public class MovableCircle implements Movable {
 
     @Override
     public String toString() {
-        return "MovableCircle{" +
+        return "Task4.MovableCircle{" +
                 "radius=" + radius +
                 ", center=" + center +
                 '}';

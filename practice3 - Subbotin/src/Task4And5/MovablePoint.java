@@ -1,8 +1,10 @@
+package Task4And5;
+
 public class MovablePoint implements Movable{
-    protected int x;
-    protected int y;
-    protected int xSpeed;
-    protected int ySpeed;
+    int x;
+    int y;
+    int xSpeed;
+    int ySpeed;
 
     public MovablePoint(int x, int y, int xSpeed, int ySpeed) {
         this.x = x;
@@ -33,7 +35,7 @@ public class MovablePoint implements Movable{
 
     @Override
     public String toString() {
-        return "MovablePoint{" +
+        return "Task4.MovablePoint{" +
                 "x=" + x +
                 ", y=" + y +
                 ", xSpeed=" + xSpeed +

@@ -21,16 +21,24 @@ public class JMain extends JFrame {
 
     Font font = new Font("Times new roman", Font.BOLD, 20);
 
+    JPanel[] jPanels = new JPanel[4];
+
     JMain() {
         super("Результаты матчей");
-        setLayout(new FlowLayout());
+        setLayout(new GridLayout(4, 1));
         setSize(600, 600);
 
-        add(buttonACMilan);
-        add(buttonRealMadrid);
-        add(labelResult);
-        add(labelLastScorer);
-        add(labelWinner);
+        for (int i = 0; i < jPanels.length; i++) {
+            jPanels[i] = new JPanel();
+            jPanels[i].setLayout(new FlowLayout());
+            add(jPanels[i]);
+        }
+
+        jPanels[0].add(buttonACMilan);
+        jPanels[0].add(buttonRealMadrid);
+        jPanels[1].add(labelResult);
+        jPanels[2].add(labelLastScorer);
+        jPanels[3].add(labelWinner);
 
         buttonACMilan.setFont(font);
         buttonRealMadrid.setFont(font);
@@ -112,7 +120,7 @@ public class JMain extends JFrame {
     }
 
     private String getLastScorer() {
-        return lastScorer;
+        return "Last Scorer: " + lastScorer;
     }
 
     private String getWinner() {

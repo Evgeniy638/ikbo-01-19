@@ -45,7 +45,7 @@ public class Task1 extends JFrame {
                 boolean hasReply = false;
                 int reply = JOptionPane.YES_OPTION;
 
-                String textMessage = "Начать игру заново?";
+                String textMessage = "Правильный ответ " + answer + "\nНачать игру заново?";
 
                 if (answer == Integer.parseInt(input.getText())) {
                     reply = JOptionPane.showConfirmDialog(Task1.this,
@@ -106,7 +106,7 @@ public class Task1 extends JFrame {
     }
 
     public void setMessage() {
-        labelMessage.setText("Осталось количество попыток: " + numberOfAttempts + " " + answer);
+        labelMessage.setText("Осталось количество попыток: " + numberOfAttempts);
     }
 
     public static void main(String[] args) {
